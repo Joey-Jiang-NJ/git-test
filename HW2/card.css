@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  flex-flow: column wrap;
+  width: 360px;
+  position: relative;
+}
+
+figure {
+  height: 202px;
+  margin: 0;
+}
+
+time {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 20%;
+  top: 170px;
+  left: 315px;
+  opacity: 0.75;
+  margin: 0;
+}
+
+img + img {
+  display: none;
+  width: 360px;
+  height: 202px;
+}
+
+svg {
+  display: none;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  opacity: 0.75;
+  top: 3px;
+  left: 335px;
+}
+
+figure:hover time {
+  display: none;
+}
+
+figure:hover .still {
+  display: none;
+}
+
+figure:hover svg {
+  display: block;
+}
+
+figure:hover .animated {
+  display: block;
+}
+
+section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 360px;
+}
+
+section img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  /* width: 326px; */
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 1ch;
+}
+
+span {
+  color: grey;
+}

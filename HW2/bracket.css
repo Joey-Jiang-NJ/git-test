@@ -1,0 +1,194 @@
+body {
+  background-color: aliceblue;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(196, 106, 196);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.left-first p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: grey;
+}
+
+.right-first p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: grey;
+  text-align: right;
+}
+
+.left-first,
+.right-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-first > div > div {
+  width: 200px;
+  height: 150px;
+  border: 2px solid rgb(196, 106, 196);
+  border-radius: 5%;
+}
+
+.right-first > div > div {
+  width: 200px;
+  height: 150px;
+  border: 2px solid rgb(196, 106, 196);
+  border-radius: 5%;
+}
+
+.left-second {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 70px;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.left-second > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 80px;
+  border: 1.5px solid black;
+  border-left: 0;
+}
+
+.left-second p {
+  margin: 0;
+}
+
+.right-second {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 70px;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+
+.right-second > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 80px;
+  border: 1.5px solid black;
+  border-right: 0;
+}
+
+.right-second p {
+  margin: 0;
+  text-align: right;
+}
+
+.left-third {
+  display: flex;
+  flex-direction: column;
+  gap: 190px;
+  margin-top: 110px;
+}
+
+.left-third div {
+  width: 150px;
+  height: 180px;
+  border: 1.5px solid black;
+  border-left: 0;
+}
+
+.right-third {
+  display: flex;
+  flex-direction: column;
+  gap: 190px;
+  margin-top: 110px;
+}
+
+.right-third div {
+  width: 150px;
+  height: 180px;
+  border: 1.5px solid black;
+  border-right: 0;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  align-content: center;
+  margin-top: 40px;
+  flex-shrink: 0;
+}
+
+.middle * {
+  width: 150px;
+  height: 180px;
+  border: 1.5px solid black;
+  box-sizing: border-box;
+}
+
+.one {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.two {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.three {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.four {
+  border-top: 0;
+  border-left: 0;
+}
+
+.five {
+  border: 0;
+}
+
+.six {
+  border-top: 0;
+  border-right: 0;
+}
+
+/* countries */
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+}
+
+.item > p {
+  margin: 0;
+}
+
+img {
+  width: 30px;
+  /* text-align: center; */
+}
+
+.four-country {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+}

@@ -1,0 +1,148 @@
+ol {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  margin-bottom: 5ch;
+}
+
+.first {
+  display: flex;
+  gap: 2%;
+}
+
+.first .item {
+  background-color: cornflowerblue;
+  height: 100px;
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+.second {
+  display: flex;
+  /* gap: 2%; */
+}
+
+.second * {
+  background-color: cornflowerblue;
+  height: 100px;
+  flex-basis: 100px;
+}
+
+.second .item-center {
+  flex-grow: 1;
+}
+
+.second .item + .item {
+  margin-left: 2%;
+}
+
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.third .item {
+  background-color: cornflowerblue;
+  width: 49%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.third .item:nth-child(3n) {
+  /* every three element */
+  width: 100%;
+}
+
+.fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth .item {
+  background-color: cornflowerblue;
+  height: 40px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.fifth {
+  display: flex;
+  flex-flow: column wrap;
+  /* align-content: space-between; */
+  height: 580px;
+}
+
+.fifth .item {
+  background-color: cornflowerblue;
+  width: 32%;
+  margin-bottom: 1%;
+}
+
+.fifth .item:nth-child(3n + 1) {
+  order: 1;
+}
+
+.fifth .item:nth-child(3n + 2) {
+  order: 2;
+}
+
+.fifth .item:nth-child(3n) {
+  order: 3;
+}
+
+.fifth .child-1 {
+  height: 200px;
+}
+
+.fifth .child-2 {
+  height: 250px;
+}
+
+.fifth .child-3 {
+  height: 225px;
+}
+
+.fifth .child-4 {
+  height: 100px;
+}
+
+.fifth .child-5 {
+  height: 100px;
+}
+
+.fifth .child-6 {
+  height: 125px;
+}
+
+.fifth .child-7 {
+  height: 100px;
+}
+
+.fifth .child-8 {
+  height: 75px;
+}
+
+.fifth .child-9 {
+  height: 100px;
+}
+
+.fifth .child-10 {
+  height: 100px;
+}
+
+.fifth::before,
+.fifth::after {
+  content: "";
+  flex-basis: 100%;
+  /* width: 10px; */
+  /* background-color: aqua; */
+  order: 2;
+}
